@@ -1,0 +1,37 @@
+.news-app {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.news-item {
+    width: 500px;
+    padding: 20px;
+    border: 1px solid;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Задаем радиус скругления углов */
+    box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.5); /* Задаем тень */
+    font-family: "Roboto", sans-serif;
+    font-size: large;
+    @media (max-width: 390px) {
+        /* Стили для мобильных устройств */
+        width: unset;
+      }
+}
+
+.news-img {
+    width: 100%;
+}
+.news-item-link {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    
+}
+.news-item-link h3{
+    color: #007bff;
+}
+.news-item-link:hover {
+    transform: scale(1.05);
+  transition: transform 0.3s
+  }
